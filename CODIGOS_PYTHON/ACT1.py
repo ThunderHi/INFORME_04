@@ -1,11 +1,11 @@
-# Clase Padre
+#Clase Padre
 class Padre:
     def __init__(self, nombre):
-        self.nombre = nombre  # Atributo "nombre"
-        self.hijos = []       # Lista para almacenar objetos Hijo
-        self.numHijos = 0     # Contador de hijos
+        self.nombre = nombre  #Atributo "nombre"
+        self.hijos = []       #Lista para almacenar objetos Hijo
+        self.numHijos = 0     #Contador de hijos
     
-    # Método para agregar un hijo a la lista
+    #Metodo para agregar un hijo a la lista
     def agregarHijo(self, hijo):
         if self.numHijos < 5:
             self.hijos.append(hijo)
@@ -13,27 +13,27 @@ class Padre:
         else:
             print("No se pueden agregar más hijos.")
 
-    # Método para imprimir información del Padre
+    #Metodo para imprimir información del Padre
     def imprimirInfo(self):
         print("Nombre del Padre:", self.nombre)
         print("Número de Hijos:", self.numHijos)
 
-# Clase Hijo
+#Clase Hijo
 class Hijo:
     def __init__(self, nombre):
         self.nombre = nombre  # Atributo "nombre"
 
-# Función principal
+#Función principal
 def main():
-    padre = Padre("Alexander")  # Crea un objeto Padre con nombre "Alexander"
+    padre = Padre("Alexander")  #Crea un objeto Padre con nombre "Alexander"
 
-    hijo1 = Hijo("Pedro")  # Crea un objeto Hijo con nombre "Pedro"
-    hijo2 = Hijo("Maria")  # Crea un objeto Hijo con nombre "Maria"
+    hijo1 = Hijo("Pedro")  #Crea un objeto Hijo con nombre "Pedro"
+    hijo2 = Hijo("Maria")  #Crea un objeto Hijo con nombre "Maria"
 
-    padre.agregarHijo(hijo1)  # Agrega hijo1 al Padre
-    padre.agregarHijo(hijo2)  # Agrega hijo2 al Padre
+    padre.agregarHijo(hijo1)  #Agrega hijo1 al Padre
+    padre.agregarHijo(hijo2)  #Agrega hijo2 al Padre
 
-    padre.imprimirInfo()  # Imprime la información del Padre
+    padre.imprimirInfo()  #Imprime la información del Padre
 
 if __name__ == "__main__":
     main()
