@@ -45,7 +45,7 @@ int main() {
     Cliente cliente1("Juan", "Av. Jesus 500", "123456789");
     Cliente cliente2("Maria", "Av. Ejercito", "987654321");
 
-    // Se crean productos con codigo, descripcion, precio y proovedor
+    // Se crean productos con codigo, descripcion, precio y proveedor
     Producto producto1(1, "Camisa", 25.99, "Proveedor1");
     Producto producto2(2, "Pantalon", 39.99, "Proveedor2");
 
